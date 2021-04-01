@@ -81,9 +81,12 @@
         <div class="date">July 2019 - Present</div>
       </div>
       <ul class="company-bullets">
-        <li>Led a feature to add the tasks/checklist feature to the new <a href="https://confluence.atlassian.com/bitbucket/try-the-new-pull-request-experience-in-bitbucket-958455255.html" target="_blank">Bitbucket Pull Request UI</a>. This project required significant API changes to an internal React component used across the company and was one of the most requested features by users for the new experience. Its success allowed us to double the rollout of the new UI in a short amount of time</li>
-        <li>Worked heavily in Bitbucket's <a href="https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Bworkspace%7D/%7Brepo_slug%7D/diff/%7Bspec%7D">public 2.0 Repository Diff API</a> to improve performance and reliability. Notable changes include handling of large files and preventing them from causing the API to timeout and adding support for Diffs with file names that have special encoding/escaping</li>
-        <li>Frequently contributed to Bitbucket's internal Python library that is used for interacting with Git at a low level. Main focus was on complex bug fixes that targeted inconsistencies in error handling and unexpected behavior due to NFS</li>
+        <li>Delivered a project that added caching to Bitbucket's public <a href="https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Bworkspace%7D/%7Brepo_slug%7D/diff/%7Bspec%7D">Diff</a> and <a href="https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Bworkspace%7D/%7Brepo_slug%7D/diffstat/%7Bspec%7D">Diffstat</a> APIs, allowing users to view their pull requests much faster with a 5-10x reduction in API response times and lightened the load on the infrastructure with a 25% reduction in NFS usage</li>
+        <li>Led the "Tasks" feature in Bitbucket's <a href="https://confluence.atlassian.com/bitbucket/try-the-new-pull-request-experience-in-bitbucket-958455255.html" target="_blank">new Pull Request UI</a>, which was the top request from users at the time. It provided new workflows that allowed users to author and review pull requests in a more structured manner</li>
+        <li>Shipped improvements to Bitbucket's Diff API that allowed it to process diffs that contained massive amounts of changes - previously customers would have to review these changes locally as the API would time-out or throw an error in this situation</li>
+        <li>Frequently contributed to Bitbucket's internal Python library that is used for interacting with Git at a low level - mainly focused on bug fixes that came from customer support cases</li>
+        <li>Built internal tooling to automate recurring manual tasks related to customer support, saving time for software engineers, support engineers, and several customers</li>
+        <li>Contributed to Atlassian's open source <a href="https://bitbucket.org/atlassianlabs/atlascode/src/main/">VScode extension</a> to address an inconsistency between Bitbucket's pull request UI and the extension's pull request viewer that came up in a customer support case</li>
       </ul>
 
       <div class="place-and-date">
@@ -94,12 +97,14 @@
           </div>
           <div class="job-title">Software Engineering Intern</div>
         </div>
-        <div class="date">May 2018 - June 2019</div>
+        <div class="date">May - August 2018
+        <div class="date">September - June 2019 (part-time)</div>
+        </div>
       </div>
       <ul class="company-bullets">
-        <li>Owned and shipped the conversion of Bitbucket's Repository Branches page to a React-based SPA, improving the page performance and experience for 200,000 daily users</li>
-        <li>Led a team of contractors to convert additional pages on Bitbucket to the React SPA, including the Commit List, Pull Request List, and Repository List - improving performance and user experience to some of the most frequently visisted pages on the site</li>
-        <li>Developed several new internal APIs in the Python/Django backend to meet the technical and performance requirements of the React transition</li>
+        <li>Owned and shipped a new version of Bitbucket's Repository Branches page to a React-based SPA, improving the page performance and experience for over 200,000 daily users</li>
+        <li>Led a team contractors to ship new versions of pages on Bitbucket to the React SPA architecture, including the Commit List, Pull Request List, and Repository List. This significantly sped up the user experience as navigating between different pages no longer required a full reload</li>
+        <li>Developed several new internal APIs in the Python/Django backend to support the technical and performance requirements of the new React pages</li>
       </ul>
 
       <div class="place-and-date">
@@ -113,30 +118,11 @@
         <div class="date">May - August 2017</div>
       </div>
       <ul class="company-bullets">
-        <li>Incrementally added React to an internal Django application, making the site look and perform better while making the code higher quality and more maintainable</li>
+        <li>Incrementally added React to an internal Django application, making the site look and perform better while making the code more maintainable</li>
         <li>Built a create-react-app like tool to generate domain specific React components for things such as build status pages and device creation forms, allowing for quicker development and more consistent code</li>
-        <li>Wrote tutorial and example based documentation on the above project, allowing those unfamiliar with React to be productive when adding and editing features</li>
       </ul>
-
     <section>
       <div class="section-title">Personal Projects</div>
-      <div class="personal-project">
-        <div class="personal-project-header">
-          <span class="personal-project-title">
-            <span>Blast</span>
-            <span class="personal-project-github-link">
-              <a href="https://github.com/bhoeting/blast">(view on GitHub)</a>
-            </span>
-          </span>
-          <span class="personal-project-year">2015</span>
-        </div>
-        <ul>
-          <li>Interpreted dynamic programming language built from scratch in Go</li>
-          <li>Has functions, loops, conditionals, primitives, scoping, and expression evaluation</li>
-          <li>Nearly all the code in the project has automated tests</li>
-        </ul>
-      </div>
-
       <div class="personal-project">
         <div class="personal-project-header">
           <span class="personal-project-title">
@@ -150,8 +136,9 @@
         <ul>
           <li>Web application that generates class schedules and displays historical GPA data from a list of courses at Miami University</li>
           <li>Programmatically imports course and GPA data from public sources</li>
-          <li>Built with Go and Vue</li>
+          <li>Built with Node and React (first version used Go and Vue)</li>
           <li>Over <b>4250</b> unique users during registration times</li>
+          <li>Still used to this day nearly 2 years after graduating</li>
         </ul>
       </div>
     </section>
