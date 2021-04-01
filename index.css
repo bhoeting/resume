@@ -51,6 +51,7 @@ ul {
 .date {
   font-style: italic;
   font-size: 15px;
+  padding-right: 20px;
 }
 
 .name {
@@ -147,11 +148,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.personal-project-year {
-  font-style: italic;
-  font-size: 15px;
 }
 
 .personal-project-github-link a,
